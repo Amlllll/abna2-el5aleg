@@ -1,0 +1,248 @@
+:root {
+    --mainColor: #10002b;
+    --mgcolor: #ff9e00;
+    --blueColor: #3d405b;
+    --mainPadding: 60px 0;
+    --boxshadow: 0 2px 3px 0 rgb(0 0 0 / 15%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'El Messiri', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.link-btn {
+    padding: 10px 25px;
+    background: var(--mgcolor);
+    text-decoration: none;
+    border: 1px solid var(--mgcolor);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.link-btn:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    transition: all 0.3s ease-in;
+    color: var(--mgcolor) !important;
+    text-decoration: none;
+}
+
+header nav .navbar-nav .nav-item {
+    text-align: right;
+}
+
+header nav .navbar-nav .nav-item a {
+    color: var(--mgcolor) !important;
+}
+
+.bg-sec {
+    background: url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 230px 0;
+    position: relative;
+}
+
+.bg-sec::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.bg-sec .main-content {
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.bg-sec .main-content h2,
+.bg-sec .main-content a {
+    color: #fff;
+}
+
+.bg-sec .main-content p {
+    color: var(--mgcolor);
+}
+
+.link-btn {
+    padding: 10px 25px;
+    background: var(--mgcolor);
+    text-decoration: none;
+    border: 1px solid var(--mgcolor);
+    border-radius: 5px;
+}
+
+.link-btn:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    transition: all 0.3s ease-in;
+    color: var(--mgcolor) !important;
+    text-decoration: none;
+}
+
+.f-section {
+    padding: var(--mainPadding);
+}
+
+.s-section {
+    padding: var(--mainPadding);
+    background: #f4f4f4;
+    box-shadow: var(--boxshadow);
+}
+
+.s-section .pad-div {
+    padding-top: 80px;
+}
+
+.s-section .pad-div i {
+    color: var(--mgcolor);
+}
+
+.s-section .img-box img {
+    border-radius: 17px;
+}
+
+.t-section {
+    padding: var(--mainPadding);
+}
+
+.t-section .card {
+    border: none;
+    box-shadow: var(--boxshadow);
+    position: relative;
+}
+
+.t-section .card::before {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 50%;
+    pointer-events: none;
+    right: 50%;
+    margin: -2.5px;
+    background: #ffffff82;
+    transform: scale(0);
+}
+
+.t-section .card:hover::before {
+    transform: scale(110);
+    opacity: 0;
+    transition: .5s all ease;
+}
+
+.t-section .card p.card-text {
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--mainColor);
+}
+
+.t-section .card h6 {
+    color: var(--mgcolor);
+}
+
+.f-section {
+    background: #f4f4f4;
+    padding: var(--mainPadding);
+    box-shadow: var(--boxshadow);
+}
+
+.f-section .owl-carousel {
+    direction: ltr;
+}
+
+.f-section .owl-carousel .owl-item img {
+    display: inline;
+    width: auto;
+    border-radius: 50%;
+}
+
+.f-section ul li {
+    display: inline;
+}
+
+.f-section ul li i {
+    color: var(--mgcolor);
+}
+
+footer {
+    background: #090b0c;
+    padding: var(--mainPadding);
+}
+
+footer h5 {
+    color: var(--mgcolor);
+}
+
+footer p,
+footer span {
+    color: #fff;
+}
+
+footer ul {
+    padding-right: 0 !important;
+}
+
+footer ul li {
+    color: #fff;
+    font-size: 20px;
+}
+
+footer ul li i {
+    color: var(--mgcolor);
+    margin-left: 10px;
+}
+
+.footer {
+    color: #ccc;
+    background: #000;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.footer p {
+    margin-top: 7px;
+    color: #ccc;
+}
+
+.footer a i {
+    color: #ccc;
+    margin: 0 2px;
+}
+
+.footer p a span {
+    color: var(--mgcolor);
+}
+
+.footer p a span:hover {
+    text-decoration: none;
+}
+
+
+/*responsive*/
+
+@media (max-width: 575.98px) {
+    .s-section .pad-div {
+        padding-top: 0px;
+    }
+}
