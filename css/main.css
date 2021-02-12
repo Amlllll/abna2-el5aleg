@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Almarai', sans-serif;
     margin: 0;
     padding: 0;
     direction: rtl;
@@ -44,6 +44,11 @@ header nav .navbar-nav .nav-item {
 
 header nav .navbar-nav .nav-item a {
     color: var(--mgcolor) !important;
+}
+
+header nav a.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .bg-sec {
@@ -119,6 +124,7 @@ header nav .navbar-nav .nav-item a {
 
 .s-section .img-box img {
     border-radius: 17px;
+    width: 100%;
 }
 
 .t-section {
@@ -161,27 +167,27 @@ header nav .navbar-nav .nav-item a {
     color: var(--mgcolor);
 }
 
-.f-section {
+.c-section {
     background: #f4f4f4;
     padding: var(--mainPadding);
     box-shadow: var(--boxshadow);
 }
 
-.f-section .owl-carousel {
+.c-section .owl-carousel {
     direction: ltr;
 }
 
-.f-section .owl-carousel .owl-item img {
+.c-section .owl-carousel .owl-item img {
     display: inline;
     width: auto;
     border-radius: 50%;
 }
 
-.f-section ul li {
+.c-section ul li {
     display: inline;
 }
 
-.f-section ul li i {
+.c-section ul li i {
     color: var(--mgcolor);
 }
 
